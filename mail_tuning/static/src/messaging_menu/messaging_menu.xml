@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Copyright 2026 Weboffice IT-Service und Marketing GmbH & Co KG
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<templates xml:space="preserve">
+    <t t-inherit="mail.MessagingMenu-navigation" t-inherit-mode="extension">
+        <xpath expr="//button[hasclass('o-mail-MessagingMenu-tab')]" position="attributes">
+            <attribute name="t-att-aria-label">this.tabLabel(tab)</attribute>
+        </xpath>
+        <xpath
+            expr="//button[hasclass('o-mail-MessagingMenu-tab')]/span[hasclass('o-xsmaller')]"
+            position="attributes"
+        >
+            <attribute name="t-out">this.tabLabel(tab)</attribute>
+        </xpath>
+    </t>
+</templates>
