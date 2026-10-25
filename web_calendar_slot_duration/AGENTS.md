@@ -2,15 +2,15 @@
 
 ## Purpose
 
-Calendar views take their slot length from the action context
-(`calendar_slot_duration`, e.g. `"00:30:00"`); new timed events get that duration.
+Calendar views take their slot length from the action context (`calendar_slot_duration`,
+e.g. `"00:30:00"`); new timed events get that duration.
 
 ## Notes for 20.0
 
 - Migrated from 19.0 in this fork; code and Hoot tests taken over from the closed
   OCA/web#3725.
-- Patches `CalendarCommonRenderer.options` and `CalendarModel.buildRawRecord`;
-  both read `env.searchModel.context`.
+- Patches `CalendarCommonRenderer.options` and `CalendarModel.buildRawRecord`; both read
+  `env.searchModel.context`.
 
 ## Tests
 
